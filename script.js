@@ -35,7 +35,6 @@ function addTaskToDOM(task) {
     </div>
   `;
 
-  // Eventos
   li.querySelector(".check").addEventListener("click", () => {
     li.classList.toggle("done");
     toggleDone(task.text);
