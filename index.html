@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <form id="todo-form">
+        <select id="filter">
+            <option value="all">Todas</option>
+            <option value="pending">Em andamento</option>
+            <option value="done">Concluídas</option>
+          </select>          
+          <input id="todo-input" type="text" placeholder="Digite uma tarefa" autocomplete="off" />
+      <button type="submit">Adicionar</button>
+      <button id="clear-all">Limpar Tudo</button>
+    </form>
+    <ul id="todo-list"></ul>
+    <footer>
+        <p style="text-align: center; color: #aaa; font-size: 0.9rem; margin-top: 20px;">
+          © 2025 – Desenvolvido por Bruno Omena
+        </p>
+      </footer>      
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
